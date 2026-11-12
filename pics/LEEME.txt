@@ -1,0 +1,3 @@
+Pon aqui 39 fotos JPG: 001.jpg hasta 039.jpg, y 16 videos MP4: 0001.mp4 hasta 0016.mp4.
+Las fotos y los videos se mezclan en orden aleatorio al cargar la pagina.
+Cada elemento se muestra durante 3 segundos. Los videos se reproducen sin sonido.
