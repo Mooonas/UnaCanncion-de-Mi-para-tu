@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nuestra canción</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <canvas id="petals" aria-hidden="true"></canvas>
+
+  <aside class="lyrics-side lyrics-left" id="lyrics-left" aria-label="Letra, lado izquierdo"></aside>
+  <aside class="lyrics-side lyrics-right" id="lyrics-right" aria-label="Letra, lado derecho"></aside>
+
+  <main class="stage">
+    <h1 class="top-title" id="top-title">La cancion de mi para ti, mi esposita</h1>
+
+    <div class="player">
+      <div class="screen">
+        <div id="heart-screen" class="heart-screen"><span class="heart">♡</span></div>
+        <img id="photo" class="media-image" alt="Recuerdo" hidden>
+        <video id="video" class="media-video" aria-label="Video de recuerdo" muted playsinline preload="auto" hidden></video>
+        <div class="glass"></div>
+      </div>
+
+      <div class="progress" id="progress" aria-label="Progreso de la canción">
+        <div class="bar"><div class="fill" id="fill"></div></div>
+        <div class="times"><span id="t-now">0:00</span><span id="t-total">0:00</span></div>
+      </div>
+
+      <div class="wheel">
+        <button class="w-btn top" id="prev" aria-label="Foto anterior">⏮</button>
+        <button class="w-btn bottom" id="next" aria-label="Foto siguiente">⏭</button>
+        <button class="w-btn left" id="back" aria-label="Retroceder 10 segundos">↺</button>
+        <button class="w-btn right" id="fwd" aria-label="Adelantar 10 segundos">↻</button>
+        <button class="center" id="play" aria-label="Reproducir">▶</button>
+      </div>
+    </div>
+
+    <div class="song-info">
+      <p class="song-title" id="song-title">Amor</p>
+      <p class="song-artist" id="song-artist">Emmanuel Cortes</p>
+      <p class="hint" id="hint">presiona el centro ♡</p>
+    </div>
+  </main>
+
+  <audio id="audio" src="./audio.mp3" preload="metadata"></audio>
+  <script src="./script.js"></script>
+</body>
+</html>
